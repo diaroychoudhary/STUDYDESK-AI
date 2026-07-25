@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>StudyDesk — Your Digital Study Desk</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="spiral"></div>
+      <div class="sidebar-top">
+        <div class="logo"><span class="logo-icon">📖</span><span class="logo-text">StudyDesk</span></div>
+        <nav class="nav" id="nav">
+          <button class="nav-item active" data-nav="home"><span class="nav-icon">🏠</span><span class="nav-label">Home</span></button>
+          <button class="nav-item" data-nav="notes"><span class="nav-icon">📝</span><span class="nav-label">My Notes</span></button>
+          <button class="nav-item" data-nav="buddy"><span class="nav-icon">🤖</span><span class="nav-label">AI Buddy</span></button>
+          <button class="nav-item" data-nav="flashcards"><span class="nav-icon">🧠</span><span class="nav-label">Flashcards</span></button>
+          <button class="nav-item" data-nav="quizzes"><span class="nav-icon">📝</span><span class="nav-label">Quizzes</span></button>
+          <button class="nav-item" data-nav="studio"><span class="nav-icon">🎙️</span><span class="nav-label">Studio</span></button>
+          <button class="nav-item" data-nav="progress"><span class="nav-icon">📊</span><span class="nav-label">Progress</span></button>
+        </nav>
+      </div>
+      <div class="sidebar-bottom">
+        <button class="toggle" id="profileBtn">
+          <span class="toggle-label"><span class="avatar" id="avatarInitials">?</span><span id="profileNameLabel">Add your name</span></span>
+          <span class="edit-hint">✎</span>
+        </button>
+        <button class="toggle" id="themeToggle">
+          <span class="toggle-label"><span id="themeIcon">☀️</span><span id="themeLabel">Light Mode</span></span>
+          <span class="switch" id="switchTrack"><span class="switch-thumb"></span></span>
+        </button>
+      </div>
+    </aside>
+
+    <main class="main" id="main"></main>
+  </div>
+
+  <div id="modalRoot"></div>
+  <div id="toastRoot"></div>
+  <input type="file" id="pdfInput" accept="application/pdf" style="display:none" />
+
+<script src="script.js"></script>
+</body>
+</html>
